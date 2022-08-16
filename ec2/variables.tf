@@ -1,4 +1,34 @@
 variable "create" {
+  type    = bool
+  default = true
+}
+
+variable "application" {
+  type        = string
+  description = ""
+}
+
+variable "environment" {
+  type        = string
+  description = ""
+}
+
+variable "team" {
+  type        = string
+  description = ""
+}
+
+variable "product" {
+  type        = string
+  description = ""
+}
+
+variable "bu" {
+  type        = string
+  description = ""
+}
+
+variable "create" {
   description = "Whether to create an instance"
   type        = bool
   default     = true
