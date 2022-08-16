@@ -23,12 +23,6 @@ variable "bu" {
   description = ""
 }
 
-variable "create" {
-  description = "Whether to create an instance"
-  type        = bool
-  default     = true
-}
-
 variable "name" {
   description = "Name to be used on EC2 instance created"
   type        = string
