@@ -22,7 +22,7 @@ module "tags" {
   custom_tags = var.custom_tags
 }
 
-module "ec2_instance" {
+module "aws_instance" {
   source = "git@github.com:PicPay/tech-cross-terraform-modules.git//ec2"
 
   ami                  = var.ami
