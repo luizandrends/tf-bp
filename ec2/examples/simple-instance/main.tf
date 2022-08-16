@@ -8,8 +8,8 @@ locals {
   bu = "my-bu"
 }
 
-module "instance" {
-  source = "../../"
+module "aws_instance" {
+  source = "git@github.com:PicPay/tech-cross-terraform-blueprints.git//ec2"
 
   name = local.name
 
@@ -22,5 +22,5 @@ module "instance" {
   ami           = "ami-090fa75af13c156b4"
   instance_type = "t2.micro"
   key_name      = "teste-ec2"
-  monitoring    = false 
+  monitoring    = false
 }
