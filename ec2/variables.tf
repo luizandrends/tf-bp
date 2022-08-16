@@ -1,8 +1,3 @@
-variable "create" {
-  type    = bool
-  default = true
-}
-
 variable "application" {
   type        = string
   description = ""
