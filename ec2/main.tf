@@ -10,7 +10,7 @@ locals {
 }
 
 module "tags" {
-  source = "git@github.com:PicPay/tech-cross-terraform-modules.git//tags?ref=0.1.2"
+  source = "git@github.com:PicPay/tech-cross-terraform-modules.git//tags"
 
   name = local.name
 
@@ -23,7 +23,7 @@ module "tags" {
 }
 
 module "ec2_instance" {
-  source = "git@github.com:PicPay/tech-cross-terraform-modules.git//ec2?ref=0.1.2"
+  source = "git@github.com:PicPay/tech-cross-terraform-modules.git//ec2"
 
   ami                  = var.ami
   instance_type        = var.instance_type
